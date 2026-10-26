@@ -1,8 +1,19 @@
 {
-  "name": "video-gen-server",
+  "name": "video-gen-mobile",
   "version": "1.1.0",
-  "type": "module",
-  "engines": { "node": ">=18" },
-  "scripts": { "start": "node server.js", "dev": "node --watch server.js" },
-  "dependencies": { "@gradio/client": "^1.0.0", "cors": "^2.8.5", "dotenv": "^16.4.5", "express": "^4.19.2" }
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": { "start": "expo start" },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "1.23.1",
+    "@react-native-community/slider": "4.5.5",
+    "expo": "~52.0.0",
+    "expo-file-system": "~18.0.0",
+    "expo-image-manipulator": "~13.0.0",
+    "expo-image-picker": "~16.0.0",
+    "expo-media-library": "~17.0.0",
+    "expo-video": "~2.0.0",
+    "expo-video-thumbnails": "~9.0.0",
+    "react": "18.3.1",
+    "react-native": "0.76.5"
+  }
 }

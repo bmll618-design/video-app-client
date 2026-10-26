@@ -1,0 +1,13 @@
+{
+  "expo": {
+    "name": "Video Gen",
+    "slug": "video-gen",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "android": { "package": "com.videogen.app" },
+    "plugins": [
+      ["expo-media-library", { "photosPermission": "לשמירת סרטונים ותמונות", "savePhotosPermission": "לשמירת סרטונים ותמונות בגלריה" }],
+      ["expo-image-picker", { "photosPermission": "לבחירת תמונות לדמויות ולסצנות" }]
+    ]
+  }
+}
