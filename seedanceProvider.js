@@ -1,7 +1,7 @@
 import { BaseProvider } from './baseProvider.js';
-import { requestJson } from './httpClient.js';
-import { MAX_REFERENCES } from './mode.js';
-import { env } from './env.js';
+import { requestJson } from '../utils/httpClient.js';
+import { MAX_REFERENCES } from '../utils/mode.js';
+import { env } from '../config/env.js';
 
 // Maps ModelArk task states to our normalized states.
 const STATUS_MAP = { queued: 'pending', running: 'running', succeeded: 'succeeded', failed: 'failed', cancelled: 'failed', expired: 'failed' };

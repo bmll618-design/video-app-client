@@ -1,4 +1,4 @@
-import { env } from './env.js';
+import { env } from '../config/env.js';
 
 // Rejects requests without the shared app token (skipped when APP_TOKEN is empty).
 export function auth(req, res, next) {

@@ -1,0 +1,21 @@
+PORT=3000
+# Optional shared secret the mobile app sends in x-app-token
+APP_TOKEN=change-me
+
+# Alibaba Cloud Model Studio (Wan). Singapore key + Singapore URL go together.
+DASHSCOPE_API_KEY=
+DASHSCOPE_BASE_URL=https://dashscope-intl.aliyuncs.com
+WAN_T2V_MODEL=wan2.7-t2v
+WAN_I2V_MODEL=wan2.7-i2v
+WAN_R2V_MODEL=wan2.7-r2v
+
+# BytePlus ModelArk (Seedance)
+ARK_API_KEY=
+ARK_BASE_URL=https://ark.ap-southeast.bytepluses.com/api/v3
+SEEDANCE_MODEL_ID=dreamina-seedance-2-5-260628
+
+# Free experimental Wan via Hugging Face (token: huggingface.co/settings/tokens, type Read)
+HF_TOKEN=
+HF_SPACE_ID=multimodalart/wan2-1-fast
+# Optional: force a specific endpoint, e.g. /generate_video
+HF_API_NAME=

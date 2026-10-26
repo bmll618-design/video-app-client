@@ -1,8 +1,8 @@
 import { randomUUID } from 'node:crypto';
 import { Client, handle_file } from '@gradio/client';
 import { BaseProvider } from './baseProvider.js';
-import { pickEndpoint, buildArgs, extractVideoUrl } from './gradioMapper.js';
-import { env } from './env.js';
+import { pickEndpoint, buildArgs, extractVideoUrl } from '../utils/gradioMapper.js';
+import { env } from '../config/env.js';
 
 const JOB_TTL_MS = 2 * 60 * 60 * 1000;
 const jobs = new Map(); // id -> { status, videoUrl, error, createdAt } (in memory)

@@ -1,8 +1,8 @@
 import { Router } from 'express';
-import { MODEL_CATALOG } from './models.js';
-import { getProvider } from './providers.js';
-import { validateCreateBody } from './validate.js';
-import { resolveMode } from './mode.js';
+import { MODEL_CATALOG } from '../config/models.js';
+import { getProvider } from '../providers/index.js';
+import { validateCreateBody } from '../utils/validate.js';
+import { resolveMode } from '../utils/mode.js';
 
 const router = Router();
 

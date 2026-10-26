@@ -1,7 +1,7 @@
 import { BaseProvider } from './baseProvider.js';
-import { requestJson } from './httpClient.js';
-import { MAX_REFERENCES } from './mode.js';
-import { env } from './env.js';
+import { requestJson } from '../utils/httpClient.js';
+import { MAX_REFERENCES } from '../utils/mode.js';
+import { env } from '../config/env.js';
 
 // Maps DashScope task states to our normalized states.
 const STATUS_MAP = { PENDING: 'pending', RUNNING: 'running', SUCCEEDED: 'succeeded', FAILED: 'failed', CANCELED: 'failed', UNKNOWN: 'failed' };
